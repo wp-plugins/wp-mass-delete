@@ -49,7 +49,7 @@ use it very carefully!</p>
 					&nbsp;&nbsp; <input type="checkbox" name="private"> - private</td>
 				</tr>
 				<tr valign="top">
-					<th align="left">If post contain</th>
+					<th align="left">If post contains</th>
 					<td align="left"><input type="text" name="content" value=""
 						size="60"> then <select name="action">
 						<option selected value="delete">Delete it</option>
