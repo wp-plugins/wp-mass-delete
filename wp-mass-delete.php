@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP Mass Delete
-Version: 1.00
+Version: 1.1
 Author: CyberSEO.NET
 Author URI: http://www.cyberseo.net/
 Plugin URI: http://www.cyberseo.net/wp-mass-delete-plugin-for-wordpress/
@@ -13,7 +13,8 @@ function wpmd_show_menu() {
 	?>
 <div class="wrap">
 <h2>WP Mass Delete</h2>
-<p>The plugin alows you to mass delete WordPress posts and pages. Please use it very carefully!</p>
+<p>The plugin alows you to mass delete WordPress posts and pages. Please
+use it very carefully!</p>
 <table class="form-table" style="margin-top: .5em" width="100%">
 	<tbody>
 		<tr>
@@ -28,11 +29,17 @@ function wpmd_show_menu() {
 					posts. The dates must be specified in the following format: <strong>YYYY-MM-DD</strong>
 					</td>
 				</tr>
+<?php
+	if (version_compare ( $wp_version, '2.1', '>=' )) {
+		?>				
 				<tr valign="top">
 					<th align="left">Type of items to delete</th>
 					<td align="left"><input type="checkbox" name="posts"> - posts
 					&nbsp;&nbsp; <input type="checkbox" name="pages"> - pages</td>
 				</tr>
+<?php
+	}
+	?>				
 				<tr valign="top">
 					<th align="left">Post status</th>
 					<td align="left"><input type="checkbox" name="publish"> - published
@@ -99,9 +106,12 @@ function wpmd_show_menu() {
 		if (@$_POST ['future'] == "on") {
 			$status [] = "'future'";
 		}
-		if (count ( $type ) && count ( $status )) {
+		if ((count ( $type ) || version_compare ( $wp_version, '2.1', '<' )) && count ( $status )) {
 			@set_time_limit ( 60 * 30 );
-			$query = "SELECT ID FROM $wpdb->posts WHERE post_status IN (" . implode ( ",", $status ) . ") AND post_type IN (" . implode ( ",", $type ) . ")";
+			$query = "SELECT ID FROM $wpdb->posts WHERE post_status IN (" . implode ( ",", $status ) . ")";
+			if (version_compare ( $wp_version, '2.1', '>=' )) {
+				$query .= " AND post_type IN (" . implode ( ",", $type ) . ")";
+			}
 			if ($_POST ['start_date'] != "") {
 				$query .= " AND post_date >= '" . $_POST ['start_date'] . " 00:00:00'";
 			}

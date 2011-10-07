@@ -1,7 +1,7 @@
 === WP Mass Delete ===
 Contributors: CyberSEO.net
 Author: CyberSEO.net
-Tags: mass, mass-delete, batch, bulk, post, remove, delete
+Tags: mass, mass-delete, batch, bulk, post, page, remove, delete
 Requires at least: 2.0.0
 Tested up to: 3.2.1
 Stable tag: 4.3
@@ -32,6 +32,9 @@ The support forums can be found at http://www.cyberseo.net/forum/.
 1. User interface.
 
 == Changelog ==
+
+= 1.1 =
+* Improved compatibility with older versions of WordPress.
 
 = 1.0 =
 * Initial release.
