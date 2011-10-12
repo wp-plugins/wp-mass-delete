@@ -1,6 +1,8 @@
 === WP Mass Delete ===
 Contributors: CyberSEO.net
+Plugin URI: http://www.cyberseo.net/wp-mass-delete/
 Author: CyberSEO.net
+Author URI: http://www.cyberseo.net/
 Tags: mass, mass-delete, batch, bulk, post, page, remove, delete
 Requires at least: 2.0.0
 Tested up to: 3.2.1
@@ -10,7 +12,7 @@ Allows you to mass delete WordPress posts and pages according to the specified c
 
 == Description ==
 
-The WP Mass Delete plugin allows you to mass delete WordPress posts and pages according to the specified conditions such as date range, post status, post content, etc.
+The WP Mass Delete plugin (developed by [CyberSEO.net](http://www.cyberseo.net/ "CyberSEO.net")) allows you to mass delete WordPress posts and pages according to the specified conditions such as date range, post status, post content, etc.
 
 Please use it carefully!
 
