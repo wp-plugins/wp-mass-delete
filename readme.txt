@@ -1,7 +1,7 @@
 === WP Mass Delete ===
-Contributors: CyberSEO.net
+Contributors: CyberSEO
 Plugin URI: http://www.cyberseo.net/wp-mass-delete/
-Author: CyberSEO.net
+Author: CyberSEO
 Author URI: http://www.cyberseo.net/
 Tags: mass, mass-delete, batch, bulk, post, page, remove, delete
 Requires at least: 2.0.0

@@ -63,7 +63,7 @@ use it very carefully!</p>
                                 <tr valign="top">
                                         <th align="left">Bypass trash and force deletion</th>
                                         <td align="left"><input type="checkbox" name="force_delete"> -
-                                        enable the option to completely delete the specified posts.
+                                        enable this option to completely delete the specified posts.
 
                                 </tr>
 <?php
