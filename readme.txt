@@ -14,10 +14,6 @@ Allows you to mass delete WordPress posts and pages according to the specified c
 
 The WP Mass Delete plugin (developed by [CyberSEO.net](http://www.cyberseo.net/ "CyberSEO.net")) allows you to mass delete WordPress posts and pages according to the specified conditions such as date range, post status, post content, etc.
 
-Please use it carefully!
-
-More usage info can be found at the [plugin's homepage](http://www.cyberseo.net/wp-mass-delete/ "WP Mass Delete").
-
 == Installation ==
 
 1. Upload 'wp-flash.php' to the '/wp-content/plugins/' directory

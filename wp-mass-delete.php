@@ -8,6 +8,10 @@ Plugin URI: http://www.cyberseo.net/wp-mass-delete-plugin-for-wordpress/
 Description: This plugin allows one to mass delete WordPress posts and pages according to the specified rules. Please use it very carefully!
 */
 
+if (! function_exists ( "get_option" ) || ! function_exists ( "add_filter" )) {
+	die ();
+}
+
 function wpmd_show_menu() {
         global $wpdb, $wp_version;
         ?>
