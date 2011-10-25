@@ -4,12 +4,12 @@ Plugin Name: WP Mass Delete
 Version: 1.1
 Author: CyberSEO.NET
 Author URI: http://www.cyberseo.net/
-Plugin URI: http://www.cyberseo.net/wp-mass-delete-plugin-for-wordpress/
+Plugin URI: http://www.cyberseo.net/wp-mass-delete/
 Description: This plugin allows one to mass delete WordPress posts and pages according to the specified rules. Please use it very carefully!
 */
 
 if (! function_exists ( "get_option" ) || ! function_exists ( "add_filter" )) {
-	die ();
+        die ();
 }
 
 function wpmd_show_menu() {

@@ -16,7 +16,7 @@ The WP Mass Delete plugin (developed by [CyberSEO.net](http://www.cyberseo.net/ 
 
 == Installation ==
 
-1. Upload 'wp-flash.php' to the '/wp-content/plugins/' directory
+1. Upload 'wp-mass-delete' to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
