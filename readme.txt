@@ -37,7 +37,7 @@ The support forums can be found at http://www.cyberseo.net/forum/.
 = 1.2 =
 * The "[contributor security warning](http://wordpress.org/support/topic/plugin-wp-mass-delete-security-warning/)" issue fixed.
 * The "[closing tag bug](http://wordpress.org/support/topic/plugin-wp-mass-delete/)" bug fixed.
-* The "[noninclusive date](http://www.cyberseo.net/forum/support-eng/loss-of-permalink/)" bug fixed.
+* The "[noninclusive date](http://www.cyberseo.net/forum/freeware-plugins-support-eng/mass-delete-end-date-is-not-inclusive/)" bug fixed.
 
 = 1.1 =
 * Improved compatibility with older versions of WordPress.
