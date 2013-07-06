@@ -31,6 +31,9 @@ The support forums can be found at http://www.cyberseo.net/forum/.
 
 == Changelog ==
 
+= 1.3 =
+* The "Type of items to delete" and "Post status" options are pre-checked now.
+
 = 1.2 =
 * The "[contributor security warning](http://wordpress.org/support/topic/plugin-wp-mass-delete-security-warning/)" issue fixed.
 * The "[closing tag bug](http://wordpress.org/support/topic/plugin-wp-mass-delete/)" bug fixed.

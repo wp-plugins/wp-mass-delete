@@ -1,7 +1,7 @@
 <?php
 /*
   Plugin Name: WP Mass Delete
-  Version: 1.2
+  Version: 1.3
   Author: CyberSEO.NET
   Author URI: http://www.cyberseo.net/
   Plugin URI: http://www.cyberseo.net/wp-mass-delete/
@@ -69,7 +69,7 @@ function wpmd_show_menu() {
                                     ?>
                                     <tr valign="top">
                                         <th align="left">Type of items to delete</th>
-                                        <td align="left"><input type="checkbox" name="posts"> - posts
+                                        <td align="left"><input type="checkbox" name="posts" checked> - posts
                                             &nbsp;&nbsp; <input type="checkbox" name="pages"> - pages</td>
                                     </tr>
                                     <?php
@@ -77,7 +77,7 @@ function wpmd_show_menu() {
                                 ?>
                                 <tr valign="top">
                                     <th align="left">Post status</th>
-                                    <td align="left"><input type="checkbox" name="publish"> -
+                                    <td align="left"><input type="checkbox" name="publish" checked> -
                                         published &nbsp;&nbsp; <input type="checkbox" name="future"> -
                                         scheduled &nbsp;&nbsp; <input type="checkbox" name="pending"> -
                                         pending &nbsp;&nbsp; <input type="checkbox" name="draft"> -
