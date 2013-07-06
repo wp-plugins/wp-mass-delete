@@ -8,7 +8,7 @@ Requires at least: 2.0.0
 Tested up to: 3.5.2
 Stable tag: 4.3
 
-Allows you to mass delete WordPress posts and pages according to the specified conditions such as date range, post status, post content, etc.
+Allows one to mass delete WordPress posts and pages according to the specified conditions such as date range, post status, post content, etc.
 
 == Description ==
 

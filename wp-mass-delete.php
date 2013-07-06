@@ -47,7 +47,7 @@ function wpmd_show_menu() {
             </table>
         </div>
         <h2>WP Mass Delete</h2>
-        <p>The plugin alows you to mass delete WordPress posts and pages.
+        <p>The plugin allows one to mass delete WordPress posts and pages.
             Please use it very carefully!</p>
         <table class="form-table" style="margin-top: .5em" width="100%">
             <tbody>
