@@ -5,7 +5,7 @@ Author: CyberSEO
 Author URI: http://www.cyberseo.net/
 Tags: mass, mass-delete, batch, bulk, post, page, remove, delete
 Requires at least: 2.0.0
-Tested up to: 3.2.1
+Tested up to: 3.5.2
 Stable tag: 4.3
 
 Allows you to mass delete WordPress posts and pages according to the specified conditions such as date range, post status, post content, etc.
@@ -30,6 +30,11 @@ The support forums can be found at http://www.cyberseo.net/forum/.
 1. User interface.
 
 == Changelog ==
+
+= 1.2 =
+* The "[contributor security warning](http://wordpress.org/support/topic/plugin-wp-mass-delete-security-warning/)" issue fixed.
+* The "[closing tag bug](http://wordpress.org/support/topic/plugin-wp-mass-delete/)" bug fixed.
+* The "[noninclusive date](http://www.cyberseo.net/forum/support-eng/loss-of-permalink/)" bug fixed.
 
 = 1.1 =
 * Improved compatibility with older versions of WordPress.
