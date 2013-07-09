@@ -20,7 +20,7 @@ function wpmd_show_menu() {
             <table border="0" cellspacing="10px">
                 <tr>
                     <td valign="top">
-                        <a href="http://nanacast.com/vp/112924/471762/" target="_blank"><img src="<?php echo WP_PLUGIN_URL; ?>/wp-mass-delete/images/pac.jpg" alt="" width="250" height="42" /></a>
+                        <a href="http://nanacast.com/vp/112924/471762/16170/" target="_blank"><img src="<?php echo WP_PLUGIN_URL; ?>/wp-mass-delete/images/pac.jpg" alt="" width="250" height="42" /></a>
                         <br />
                         <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" height="31" width="250">
                             <param name="allowscriptaccess" value="always">
@@ -41,7 +41,7 @@ function wpmd_show_menu() {
                         You'll meet Barrington. He took the PAC course and put it to work. With $200K in sales on Amazon on a 
                         product he simply ships into Amazon.com over and over. From a beach in Jamaica he's growing a $1Million business!
                         <br />
-                        <a href="http://nanacast.com/vp/112924/471762/" target="_blank"><strong>What is the "Proven Amazon Course"?</strong></a>
+                        <a href="http://nanacast.com/vp/112924/471762/16170/" target="_blank"><strong>What is the "Proven Amazon Course"?</strong></a>
                     </td>
                 </tr>
             </table>
