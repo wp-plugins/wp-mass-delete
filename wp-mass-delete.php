@@ -16,7 +16,7 @@ function wpmd_show_menu() {
     global $wpdb, $wp_version;
     ?>
     <div class="wrap">
-        <p><a href="http://www.cyberseo.net/" target="_blank"><img src="<?php echo WP_PLUGIN_URL; ?>/wp-mass-delete/images/468x60.jpg" /></a></p>
+        <p><a href="http://www.cyberseo.net/" target="_blank"><img src="<?php echo WP_PLUGIN_URL; ?>/wp-mass-delete/images/468x60.jpg" style="float:right;" /></a></p>
         <h2>WP Mass Delete</h2>
         <p>The plugin allows one to mass delete WordPress posts and pages.
             Please use it very carefully!</p>
