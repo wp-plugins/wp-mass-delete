@@ -1,7 +1,7 @@
 <?php
 /*
   Plugin Name: WP Mass Delete
-  Version: 1.3
+  Version: 1.4
   Author: CyberSEO.NET
   Author URI: http://www.cyberseo.net/
   Plugin URI: http://www.cyberseo.net/wp-mass-delete/
@@ -16,36 +16,7 @@ function wpmd_show_menu() {
     global $wpdb, $wp_version;
     ?>
     <div class="wrap">
-        <div style="background-color:#FFFFCC; padding:5px; border:1px solid #ddd;">
-            <table border="0" cellspacing="10px">
-                <tr>
-                    <td valign="top">
-                        <a href="http://nanacast.com/vp/112924/471762/16170/" target="_blank"><img src="<?php echo WP_PLUGIN_URL; ?>/wp-mass-delete/images/pac.jpg" alt="" width="250" height="42" /></a>
-                        <br />
-                        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" height="31" width="250">
-                            <param name="allowscriptaccess" value="always">
-                            <param name="movie" value="http://ezs3.s3.amazonaws.com/player/510/player.swf">
-                            <param name="wmode" value="opaque">
-                            <param name="allowfullscreen" value="true">
-                            <param name="timed_link" value="0">
-                            <param name="flashvars" value="lightcolor=000099&amp;dock=false&amp;icons=true&amp;mute=false&amp;backcolor=000000&amp;aboutlink=http://www.ezs3.com/about&amp;controlbar=bottom&amp;autostart=false&amp;stretching=uniform&amp;frontcolor=ffffff&amp;screencolor=000000&amp;repeat=none&amp;file=http://ezs33f0d2d67c22a19ef8bc6d7c90662b8be.s3.amazonaws.com/ezs3js/6054754001-616859-16.mp3&amp;provider=audio&amp;abouttext=eZs3&amp;skin=http://ezs3.s3.amazonaws.com/player/skins/Stijl.swf">
-                            <embed height="31" width="250" allowscriptaccess="always" src="http://ezs3.s3.amazonaws.com/player/510/player.swf" wmode="opaque" allowfullscreen="true" timed_link="0" flashvars="lightcolor=000099&amp;dock=false&amp;icons=true&amp;mute=false&amp;backcolor=000000&amp;aboutlink=http://www.ezs3.com/about&amp;controlbar=bottom&amp;autostart=false&amp;stretching=uniform&amp;frontcolor=ffffff&amp;screencolor=000000&amp;repeat=none&amp;file=http://ezs33f0d2d67c22a19ef8bc6d7c90662b8be.s3.amazonaws.com/ezs3js/6054754001-616859-16.mp3&amp;provider=audio&amp;abouttext=eZs3&amp;skin=http://ezs3.s3.amazonaws.com/player/skins/Stijl.swf">
-                        </object>
-                    </td>
-                    <td>
-                        "Are you ready for a business that can be run from anywhere, doesn't involve you shipping anything 
-                        to customers, and is virtually competition proof?"
-                        <br />
-                        <strong>Does this course work? We've got plenty of proof for you starting with this:</strong>
-                        Listen to this live testimonial from one of our students living outside the U.S. on an ISLAND! 
-                        You'll meet Barrington. He took the PAC course and put it to work. With $200K in sales on Amazon on a 
-                        product he simply ships into Amazon.com over and over. From a beach in Jamaica he's growing a $1Million business!
-                        <br />
-                        <a href="http://nanacast.com/vp/112924/471762/16170/" target="_blank"><strong>What is the "Proven Amazon Course"?</strong></a>
-                    </td>
-                </tr>
-            </table>
-        </div>
+        <p><a href="http://www.cyberseo.net/" target="_blank"><img src="<?php echo WP_PLUGIN_URL; ?>/wp-mass-delete/images/468x60.jpg" /></a></p>
         <h2>WP Mass Delete</h2>
         <p>The plugin allows one to mass delete WordPress posts and pages.
             Please use it very carefully!</p>

@@ -31,6 +31,9 @@ The support forums can be found at http://www.cyberseo.net/forum/.
 
 == Changelog ==
 
+= 1.4 =
+* Fully compatible with WordPress 3.6.1.
+
 = 1.3 =
 * The "Type of items to delete" and "Post status" options are pre-checked now.
 
