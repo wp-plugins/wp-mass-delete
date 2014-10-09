@@ -1,11 +1,11 @@
 <?php
 /*
   Plugin Name: WP Mass Delete
-  Version: 1.4
+  Version: 1.5
   Author: CyberSEO.NET
   Author URI: http://www.cyberseo.net/
   Plugin URI: http://www.cyberseo.net/wp-mass-delete/
-  Description: This plugin allows one to mass delete WordPress posts and pages according to the specified rules. Please use it very carefully!
+  Description: This plugin is intended to mass delete WordPress posts and pages. Please use it with caution!
  */
 
 if (!function_exists("get_option") || !function_exists("add_filter")) {
@@ -18,77 +18,67 @@ function wpmd_show_menu() {
     <div class="wrap">
         <p><a href="http://www.cyberseo.net/" target="_blank"><img src="<?php echo WP_PLUGIN_URL; ?>/wp-mass-delete/images/468x60.jpg" style="float:right;" /></a></p>
         <h2>WP Mass Delete</h2>
-        <p>The plugin allows one to mass delete WordPress posts and pages.
-            Please use it very carefully!</p>
-        <table class="form-table" style="margin-top: .5em" width="100%">
-            <tbody>
-                <tr>
-                    <td>
-                        <form method="post">
-                            <table class="widefat">
-                                <tr valign="top">
-                                    <th align="left">Date interval</th>
-                                    <td align="left"><input type="text" name="start_date" value=""
-                                                            size="10"> - <input type="text" name="end_date" value=""
-                                                            size="10"> - set the date interval, or leave these fields blank
-                                        to select all posts. The dates must be specified in the
-                                        following format: <strong>YYYY-MM-DD</strong>
-                                    </td>
-                                </tr>
-                                <?php
-                                if (version_compare($wp_version, '2.1', '>=')) {
-                                    ?>
-                                    <tr valign="top">
-                                        <th align="left">Type of items to delete</th>
-                                        <td align="left"><input type="checkbox" name="posts" checked> - posts
-                                            &nbsp;&nbsp; <input type="checkbox" name="pages"> - pages</td>
-                                    </tr>
-                                    <?php
-                                }
-                                ?>
-                                <tr valign="top">
-                                    <th align="left">Post status</th>
-                                    <td align="left"><input type="checkbox" name="publish" checked> -
-                                        published &nbsp;&nbsp; <input type="checkbox" name="future"> -
-                                        scheduled &nbsp;&nbsp; <input type="checkbox" name="pending"> -
-                                        pending &nbsp;&nbsp; <input type="checkbox" name="draft"> -
-                                        draft &nbsp;&nbsp; <input type="checkbox" name="private"> -
-                                        private</td>
-                                </tr>
-                                <tr valign="top">
-                                    <th align="left">If post contains</th>
-                                    <td align="left"><input type="text" name="content" value=""
-                                                            size="60"> then <select name="action">
-                                            <option selected value="delete">Delete it</option>
-                                            <option value="do_not_delete">Don't delete it</option>
-                                        </select> <br />
-                                    </td>
-                                </tr>
-                                <?php
-                                if (version_compare($wp_version, '2.9', '>=')) {
-                                    ?>
-                                    <tr valign="top">
-                                        <th align="left">Bypass trash and force deletion</th>
-                                        <td align="left"><input type="checkbox" name="force_delete"> -
-                                            enable this option to completely delete the specified posts.
+        <p>This plugin is intended to mass delete WordPress posts and pages. Please use it with caution!</p>
 
-                                    </tr>
-                                    <?php
-                                }
-                                ?>
-                            </table>
-                            <br />
-                            <div align="center">
-                                <input type="submit" name="delete" class="button-primary"
-                                       value="Delete the posts" />&nbsp;&nbsp;<input type="button"
-                                       name="cancel" value="Cancel" class="button"
-                                       onclick="javascript:history.go(-1)" />
-                            </div>
-                        </form>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="metabox-holder postbox-container">
+
+            <form method="post">
+                <table class="form-table">
+                    <tr>
+                        <th scope="row">Date interval</th>
+                        <td align="left"><input type="text" name="start_date" value=""
+                                                size="10"> - <input type="text" name="end_date" value=""
+                                                size="10">
+                            <p class="description">set the date interval, or leave these fields blank to select all posts. The dates must be specified in the following format: <strong>YYYY-MM-DD</strong></p>
+                        </td>
+                    </tr>
+                    <?php
+                    if (version_compare($wp_version, '2.1', '>=')) {
+                        ?>
+                        <tr valign="top">
+                            <th scope="row">Type of items to delete</th>
+                            <td align="left"><input type="checkbox" name="posts" checked> - posts
+                                &nbsp;&nbsp; <input type="checkbox" name="pages"> - pages</td>
+                        </tr>
+                        <?php
+                    }
+                    ?>
+                    <tr>
+                        <th scope="row">Post status</th>
+                        <td align="left"><input type="checkbox" name="publish" checked> -
+                            published &nbsp;&nbsp; <input type="checkbox" name="future"> -
+                            scheduled &nbsp;&nbsp; <input type="checkbox" name="pending"> -
+                            pending &nbsp;&nbsp; <input type="checkbox" name="draft"> -
+                            draft &nbsp;&nbsp; <input type="checkbox" name="private"> -
+                            private</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">If post contains</th>
+                        <td align="left"><input type="text" name="content" value=""
+                                                size="60"> then <select name="action">
+                                <option selected value="delete">Delete it</option>
+                                <option value="do_not_delete">Don't delete it</option>
+                            </select> <br />
+                        </td>
+                    </tr>
+                    <?php
+                    if (version_compare($wp_version, '2.9', '>=')) {
+                        ?>
+                        <tr>
+                            <th scope="row">Bypass trash</th>
+                            <td align="left"><input type="checkbox" name="force_delete"> 
+                                <p class="description">enable this option to completely delete the specified posts.</p>
+                        </tr>
+                        <?php
+                    }
+                    ?>
+                </table>
+                <br />
+                <input type="submit" name="delete" class="button-primary" value="Delete the posts" />&nbsp;&nbsp;<input type="button" name="cancel" value="Cancel" class="button" onclick="javascript:history.go(-1)" />
+            </form>
+            
+        </div>
+        
     </div>
     <?php
     if (isset($_POST ['delete'])) {
