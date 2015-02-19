@@ -1,7 +1,7 @@
 <?php
 /*
   Plugin Name: WP Mass Delete
-  Version: 1.7
+  Version: 1.8
   Author: CyberSEO.NET
   Author URI: http://www.cyberseo.net/
   Plugin URI: http://www.cyberseo.net/wp-mass-delete/
