@@ -5,7 +5,7 @@ Author: CyberSEO
 Author URI: http://www.cyberseo.net/
 Tags: mass, mass-delete, batch, bulk, post, page, remove, delete
 Requires at least: 2.0.0
-Tested up to: 4.1.1
+Tested up to: 4.2.2
 Stable tag: 4.3
 
 Allows one to mass delete WordPress posts and pages according to the specified conditions such as date range, post status, post content, etc.
@@ -31,14 +31,18 @@ The support forums can be found at http://www.cyberseo.net/forum/.
 
 == Changelog ==
 
+= 1.9 =
+* Fixed CSRF vulnerability.
+* Fully compatible with WordPress 4.2.2.
+
 = 1.8 =
-* Fully compatible with WordPress 4.1.1
+* Fully compatible with WordPress 4.1.1.
 
 = 1.7 =
-* Fully compatible with WordPress 4.1
+* Fully compatible with WordPress 4.1.
 
 = 1.6 =
-* Fully compatible with WordPress 4.0.1
+* Fully compatible with WordPress 4.0.1.
 
 = 1.5 =
 * Fully compatible with WordPress 4.0.

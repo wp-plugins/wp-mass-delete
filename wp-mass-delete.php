@@ -1,7 +1,7 @@
 <?php
 /*
   Plugin Name: WP Mass Delete
-  Version: 1.8
+  Version: 1.9
   Author: CyberSEO.NET
   Author URI: http://www.cyberseo.net/
   Plugin URI: http://www.cyberseo.net/wp-mass-delete/
@@ -81,7 +81,7 @@ function wpmd_show_menu() {
         
     </div>
     <?php
-    if (isset($_POST ['delete'])) {
+    if (isset($_POST ['delete']) && is_admin()) {
         $type = array();
         if (@$_POST ['posts'] == "on") {
             $type [] = "'post'";
