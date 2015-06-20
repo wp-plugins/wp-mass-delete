@@ -31,7 +31,7 @@ The support forums can be found at http://www.cyberseo.net/forum/.
 
 == Changelog ==
 
-= 1.9 =
+= 2.0 =
 * Fixed CSRF vulnerability.
 * Fully compatible with WordPress 4.2.2.
 

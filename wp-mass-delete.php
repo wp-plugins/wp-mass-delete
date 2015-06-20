@@ -1,7 +1,7 @@
 <?php
 /*
   Plugin Name: WP Mass Delete
-  Version: 1.9
+  Version: 2.0
   Author: CyberSEO.NET
   Author URI: http://www.cyberseo.net/
   Plugin URI: http://www.cyberseo.net/wp-mass-delete/
@@ -74,14 +74,19 @@ function wpmd_show_menu() {
                     ?>
                 </table>
                 <br />
+                <?php
+                $token = rand();
+                ?>
+                <input type="hidden" name="wpmd_token" value="<?php echo $token; ?>" />
                 <input type="submit" name="delete" class="button-primary" value="Delete the posts" />&nbsp;&nbsp;<input type="button" name="cancel" value="Cancel" class="button" onclick="javascript:history.go(-1)" />
             </form>
-            
+
         </div>
-        
+
     </div>
+
     <?php
-    if (isset($_POST ['delete']) && is_admin()) {
+    if (isset($_POST['delete']) && ($_POST['wpmd_token'] == get_option('wpmd_token'))) {
         $type = array();
         if (@$_POST ['posts'] == "on") {
             $type [] = "'post'";
@@ -142,6 +147,7 @@ function wpmd_show_menu() {
         }
         echo "<br \><div id=\"message\" class=\"updated fade\">Nothing to delete.</div><br \>";
     }
+    update_option('wpmd_token', $token);
 }
 
 function wpmd_main_menu() {
