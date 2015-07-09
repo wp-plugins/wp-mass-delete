@@ -1,7 +1,7 @@
 <?php
 /*
   Plugin Name: WP Mass Delete
-  Version: 2.0
+  Version: 2.1
   Author: CyberSEO.NET
   Author URI: http://www.cyberseo.net/
   Plugin URI: http://www.cyberseo.net/wp-mass-delete/
@@ -123,7 +123,7 @@ function wpmd_show_menu() {
                 $query .= " AND post_date <= '" . $_POST ['end_date'] . " 23:59:59'";
             }
             if ($_POST ['content'] != "") {
-                $content = $wpdb->escape($_POST ['content']);
+                $content = esc_sql($_POST ['content']);
                 if ($_POST ['action'] == "delete") {
                     $query .= " AND post_content LIKE '%{$content}%'";
                 } else {

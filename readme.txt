@@ -31,6 +31,9 @@ The support forums can be found at http://www.cyberseo.net/forum/.
 
 == Changelog ==
 
+= 2.1 =
+* The "Usage of wpdb::escape is obsolete from version 3.6" notice has been fixed.
+
 = 2.0 =
 * Fixed CSRF vulnerability.
 * Fully compatible with WordPress 4.2.2.
